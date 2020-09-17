@@ -1,0 +1,192 @@
+
+body {
+    background-color: #a3b7ff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc0000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23aa0000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23d50053' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23c81449' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23c13b8c' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23d24387' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%239960ae' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ca6ebe' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%237278b6' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23b695e6' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%236486aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23a3b7ff' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.container {
+    /* background:linear-gradient(130deg ,#74b9ff,#e66767); */
+    background-color: #d50053;
+    display: flex;
+    flex-direction: column;
+    width: 394px;
+    margin: auto;
+    margin-top: 64px;
+    box-shadow: 2px 4px 20px 4px #060002;
+}
+
+.photo {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+}
+
+.foto {
+    display: inline-block;
+    align-self: center;
+
+    margin-top: 10px;
+    
+    /* background: linear-gradient(130deg,black,yellow); */
+    background:linear-gradient(130deg ,#1870c7,#6be667);
+    background-size:200% 200%;
+    animation:animated-gradient 3s linear infinite;
+    border-radius: 50%;
+    
+    
+    
+}
+@keyframes animated-gradient {
+    25%{
+     background-position: left bottom;   
+    }
+    50%{
+     background-position: right bottom;   
+    }
+    75%{
+     background-position: right top;   
+    }
+    100%{
+     background-position: left top;   
+    }
+}
+.foto img {
+    width: 130px;
+    height:150px;
+    border-radius: 50%;
+    align-self: center;
+    margin: 5px 4px;
+    display: block;
+}
+
+.content {
+    background-color: azure;
+}
+
+h1 {
+    margin-top: 5px;
+    color: white;
+    font-size: 30px;
+    align-self: center;
+    font-family: monospace;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+li img {
+
+    width: 50px;
+}
+
+.photo p {
+    color: aquamarine;
+    font-size: 39px;
+    margin-top: -5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+button {
+    width: 111px;
+    margin: 0 auto;
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    font-size: 19px;
+    font-family: 'Grenze Gotisch', cursive;
+    transition: all 0.1s ease-in-out;
+    background-color: #a3b7ff;
+    opacity: 0.8;
+}
+
+button:hover {
+    transform: translateX(3px);
+
+    background-color: aliceblue;
+    box-shadow: 9px 8px 19px 3px #3F51B5;
+
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.heading {
+    text-shadow: 10px 20px 3px 12px white;
+    transition: all 1.3s;
+    animation: head 1.3s ease-in-out forwards;
+    position: absolute;
+
+}
+
+@keyframes head {
+    from {
+        top: 0px;
+        left: 0px;
+        color: pink;
+
+    }
+
+    to {
+        top: 0px;
+        left: 493px;
+        color: black;
+    }
+}
+
+.fa {
+    font-size: 35px;
+    padding-left: 10px;
+    padding-top: 9px;
+}
+
+li {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 22px;
+    transition: all .1s ease-in-out;
+}
+
+
+
+.icons ul:nth-child(1) li:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+    background:#a3b7ff;
+
+}
+
+.icons ul:nth-child(2) li:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+    background: #ff0084;
+
+}
+
+.icons ul:nth-child(3) li:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+    background: #a3b7ff;
+
+}
+
+.icons ul:nth-child(4) li:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+    background: #55acee;
+
+}
